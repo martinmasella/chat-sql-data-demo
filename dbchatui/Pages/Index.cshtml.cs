@@ -32,7 +32,7 @@ namespace StoryCreator.Pages
             OpenAIClient client = new(new Uri(openAIEndpoint), new AzureKeyCredential(openAIKey));
 
             // Use the SchemaLoader project to export your db schema and then paste the schema in the placeholder below
-            var systemMessage = @"Your are a helpful, cheerful database assistant. 
+            var systemMessage = @"You are a helpful, cheerful database assistant. 
             Use the following database schema when creating your answers:
 
             YOUR_DATABASE_SCHEMA
