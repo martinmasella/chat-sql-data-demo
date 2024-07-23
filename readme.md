@@ -1,3 +1,11 @@
+This application that I've forked from Alex Wolf repository is just great!
+All I needed to do was a litte change in the configuration so as to make it use the app configuration to store and read the API key and the Endpoint, things that must be private!
+According to this, the Application.config file should be kind of:
+
+
+
+This is the origital Readme that Alex wrote originally:
+
 ## Chat with your SQL Data
 
 This is the demo app for the youtube video: https://www.youtube.com/watch?v=hw6oTjw9_Ro
@@ -14,21 +22,8 @@ There is no troubleshooting support provided, feel free to fork the app and use 
 
 1. In the `SchemaLoader` project, replace the connection string placeholder with your own database connection, then run the app to generate your schema. Copy the schema into a text file for later use.
 
-1. In the `YourOwnData` project, in the DataService.cs file, replace the connection string placeholder with your own database connection - the same connection string as in step 1.
+2. In the `YourOwnData` project, in the DataService.cs file, replace the connection string placeholder with your own database connection - the same connection string as in step 1.
 
-1. In the `Index.cshtml.cs` file, replace the YOUR_SCHEMA placeholder in the AI prompt instructions section with the schema you copied previously.
+3. In the `Index.cshtml.cs` file, replace the YOUR_SCHEMA placeholder in the AI prompt instructions section with the schema you copied previously.
 
-1. In the `Index.cshtml.cs` file again, replace the OpenAI placeholder values towards the top so the app can connect to your AI service.
-
-
-
-
-
-
-
-
-
-
-
-
-
+4. In the `Index.cshtml.cs` file again, replace the OpenAI placeholder values towards the top so the app can connect to your AI service.
